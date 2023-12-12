@@ -86,7 +86,7 @@ namespace WindowsFormsApp1
                 else if (e.KeyCode == Keys.Left && copPosition.X > 0) copPosition.X -= 10;
                 else if (e.KeyCode == Keys.Right && copPosition.X < ClientSize.Width - 10) copPosition.X += 10;
 
-                // Перевірка на зіткнення козака і розбійника (може бути власна логіка)
+                // Перевірка на зіткнення козака і розбійника 
                 if (Math.Abs(robberPosition.X - copPosition.X) < 10 && Math.Abs(robberPosition.Y - copPosition.Y) < 10)
                 {
                     gameOver = true;
